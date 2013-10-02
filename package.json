@@ -4,6 +4,7 @@
   "description": "A Yeoman-based resource generator for Steroids",
   "keywords": [
     "yeoman-generator",
+    "steroids-js",
     "steroids"
   ],
   "homepage": "https://github.com/AppGyver/generator-steroids-resource",
