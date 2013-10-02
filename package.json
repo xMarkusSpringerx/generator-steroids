@@ -1,14 +1,14 @@
 {
-  "name": "generator-steroids-resource",
+  "name": "generator-steroids",
   "version": "0.1.0",
-  "description": "A Yeoman-based resource generator for Steroids",
+  "description": "A Yeoman generator for Steroids",
   "keywords": [
     "yeoman-generator",
     "steroids-js",
     "steroids"
   ],
-  "homepage": "https://github.com/AppGyver/generator-steroids-resource",
-  "bugs": "https://github.com/AppGyver/generator-steroids-resource/issues",
+  "homepage": "https://github.com/AppGyver/generator-steroids",
+  "bugs": "https://github.com/AppGyver/generator-steroids/issues",
   "author": {
     "name": "Harri Sarsa",
     "email": "harri.sarsa@appgyver.com",
@@ -17,7 +17,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/appgyver/generator-steroids-resource.git"
+    "url": "git://github.com/appgyver/generator-steroids.git"
   },
   "scripts": {
     "test": "mocha"

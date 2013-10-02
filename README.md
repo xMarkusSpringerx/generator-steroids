@@ -1,6 +1,6 @@
-# generator-steroids-resource [![Build Status](https://secure.travis-ci.org/appgyver/generator-steroids-resource.png?branch=master)](https://travis-ci.org/appgyver/generator-steroids-resource)
+# Steroids generator
 
-A [Yeoman](http://yeoman.io)-based resource generator for [Steroids](https://github.com/appgyver/steroids).
+A [Yeoman](http://yeoman.io) generator for [Steroids](https://github.com/appgyver/steroids).
 
 ## License
 

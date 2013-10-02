@@ -1,8 +1,7 @@
 path = require "path"
 yeoman = require "yeoman-generator"
-_ = require "lodash-node"
 
-module.exports = class SteroidsExampleGenerator extends yeoman.generators.Base
+module.exports = class SteroidsGenerator extends yeoman.generators.Base
   constructor: (args, options, config) ->
     yeoman.generators.Base.apply this, arguments
 
