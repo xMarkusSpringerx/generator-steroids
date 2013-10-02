@@ -1,0 +1,12 @@
+[
+  {
+    "<%= resourceName %>_id": 1,
+    "name": "First <%= resourceName %>",
+    "description": "This is awesome."
+  },
+  {
+    "<%= resourceName %>_id": 2,
+    "name": "Second <%= resourceName %>",
+    "description": "This is also okay."
+  }
+]

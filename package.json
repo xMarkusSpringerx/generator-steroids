@@ -1,0 +1,43 @@
+{
+  "name": "generator-steroids-resource",
+  "version": "0.1.0",
+  "description": "A Yeoman-based resource generator for Steroids",
+  "keywords": [
+    "yeoman-generator",
+    "steroids"
+  ],
+  "homepage": "https://github.com/AppGyver/generator-steroids-resource",
+  "bugs": "https://github.com/AppGyver/generator-steroids-resource/issues",
+  "author": {
+    "name": "Harri Sarsa",
+    "email": "harri.sarsa@appgyver.com",
+    "url": "https://github.com/AppGyver"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/appgyver/generator-steroids-resource.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.13.0",
+    "coffee-script": ">=1.6.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0-rc.1"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
