@@ -1,6 +1,5 @@
 path = require "path"
 yeoman = require "yeoman-generator"
-steroids = require "../steroids/SteroidsHelpers.coffee"
 
 module.exports = class SteroidsGenerator extends yeoman.generators.Base
   constructor: (args, options, config) ->
@@ -10,7 +9,7 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
       "Goodbye!"
 
   printInfo: ->
-    @log.info(
+    @log.writeln(
       """
       You must specify a generator!
 
