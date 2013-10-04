@@ -5,8 +5,22 @@ module.exports = class NgResourceGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
     yeoman.generators.Base.apply this, arguments
 
+    @default = args[0]
+
     @on "end", ->
-      @log.info "Adding Bower dependencies..."
+      @log.writeln(
+        """
+
+        ng-resource created! Set the location of your app to
+
+          "http://localhost/views/#{@resourceName}/index.html"
+
+        and then modify the data in "www/data/#{@resourceName}.json"
+
+        In the meantime, we'll install the Bower dependencies:
+
+        """
+      )
       @bowerInstall([ 'angular#1.0.7', 'underscore#1.5.1', 'restangular#1.0.7' ], { save: true });
 
   askFor: ->
@@ -16,6 +30,7 @@ module.exports = class NgResourceGenerator extends yeoman.generators.NamedBase
     prompts = [
       name: "resourceName"
       message: "What would you like to name your ng-resource?"
+      default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
           return true
