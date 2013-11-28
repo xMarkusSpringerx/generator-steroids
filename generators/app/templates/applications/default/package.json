@@ -10,6 +10,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "grunt-steroids": "git+ssh://git@github.com/AppGyver/grunt-steroids.git"
+    "grunt-steroids": "0.1.x"
   }
 }

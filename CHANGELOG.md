@@ -1,3 +1,7 @@
+#0.2.1 (2013-11-28)
+
+Fixed new project template `package.json`'s `grunt-steroids` dependency.
+
 #0.2.0 (2013-11-28)
 
 New generators added.
