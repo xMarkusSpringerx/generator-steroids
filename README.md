@@ -8,6 +8,7 @@ A [Yeoman](http://yeoman.io) generator for [Steroids](https://github.com/appgyve
 * `steroids:ng-scaffold` – generates an Angular.js CRUD scaffold to work with a REST-API.
 * `steroids:ng-sqlite-scaffold` – generates an Angular.js CRUD scaffold that uses Peristence.js and WebSQL as a backend, with an option to switch to Cordova's SQLite plugin.
 * `steroids:ng-touchdb-resource` – generates an Angular.js resource that syncs data in an external CouchDB database with a local TouchDB database.
+* `steroids:bb-scaffold` – generates an Backbone.js CRUD scaffold to work with a REST-API.
 * `steroids:example:<exampleName>` – Generates an example demonstrating a Steroids feature.
 
 ## Installation
