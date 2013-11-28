@@ -27,7 +27,7 @@ module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
     # select base filename for example
     prompts = [
       name: "resourceName"
-      message: "What would you like to name your ng-resource?"
+      message: "What would you like to name your ng-scaffold?"
       default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)

@@ -1,7 +1,7 @@
 path = require "path"
 yeoman = require "yeoman-generator"
 
-module.exports = class NgSqliteScaffoldGenerator extends yeoman.generators.NamedBase
+module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
     yeoman.generators.Base.apply this, arguments
 
@@ -11,7 +11,7 @@ module.exports = class NgSqliteScaffoldGenerator extends yeoman.generators.Named
       @log.writeln(
         """
 
-        ng-sqlite-scaffold created! Set the location of your app to
+        ng-sql-scaffold created! Set the location of your app to
 
           "http://localhost/views/#{@resourceName}/index.html"
 
@@ -28,7 +28,7 @@ module.exports = class NgSqliteScaffoldGenerator extends yeoman.generators.Named
     # select base filename for example
     prompts = [
       name: "resourceName"
-      message: "What would you like to name your ng-resource?"
+      message: "What would you like to name your ng-sql-scaffold resource?"
       default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
