@@ -5,6 +5,8 @@ A [Yeoman](http://yeoman.io) generator for [Steroids](https://github.com/appgyve
 ### Available generators
 
 * `steroids:ng-resource` – generates an AngularJS-based resource using local data.
+* `steroids:ng-scaffold` – generates an Angular.js CRUD scaffold to work with a REST-API.
+* `steroids:ng-sqlite-scaffold` – generates an Angular.js CRUD scaffold that uses Peristence.js and WebSQL as a backend, with an option to switch to Cordova's SQLite plugin.
 * `steroids:example:<exampleName>` – Generates an example demonstrating a Steroids feature.
 
 ## Installation
@@ -25,13 +27,14 @@ $ npm install generator-steroids -g
 
 Create a new Steroids project with [Steroids npm](https://github.com/appgyver/steroids) and go to the folder. 
 
-For an AngularJS-based resource:
+For a resource:
 
 ```
-yo steroids:ng-resource
+yo steroids:<resource>
 ```
 
 and give your resource a name. The resource files will be created and Bower will install all required dependencies.
+
 
 For an example resource:
 
