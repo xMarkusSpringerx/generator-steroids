@@ -10,6 +10,7 @@ A [Yeoman](http://yeoman.io) generator for [Steroids](https://github.com/appgyve
 * `steroids:ng-touchdb-resource` – generates an Angular.js resource that syncs data in an external CouchDB database with a local TouchDB database.
 * `steroids:bb-scaffold` – generates an Backbone.js CRUD scaffold to work with a REST-API.
 * `steroids:example:<exampleName>` – Generates an example demonstrating a Steroids feature.
+* `steroids:tutorial:<tutorialName>` – Generates the Steroids tutorials.
 
 ## Installation
 
@@ -65,6 +66,20 @@ Available examples:
 * preload -- Preload WebViews to have them available immediately.
 * s3upload -- Uploading photos to s3
 * storage -- Access Cordova's SQL Storage API.
+
+For a tutorial:
+
+```
+yo steroids:tutorial:<tutorialName>
+```
+
+Options:
+__tutorialName__: name of the tutorial to generate.
+
+Available tutorials:
+* begin -- The very basics of AppGyver Steroids, start here
+* steroids -- Basics of Steroids Native UI enhancements
+* controllers -- Basics of Controllers (requires the 'steroids' tutorial to be generated first)
 
 ## Known issues
 
