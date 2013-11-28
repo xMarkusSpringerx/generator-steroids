@@ -8,29 +8,21 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
     yeoman.generators.Base.apply this, arguments
 
     @folderName = args[0]
-    @failed = false
 
     @on "end", ->
-
-      if !@failed
-
-        process.chdir(@folderName)
-        @installDependencies { skipInstall: options['skip-install'] }
-
+      process.chdir(@folderName)
+      @installDependencies()
 
   app: ->
     if !@folderName
-
       @log.writeln(
         """
         #{chalk.red("ERROR:")} You must specify a folder name as the first argument.
         """
       )
-
-      @failed = true
+      process.exit(1)
 
     else
-
       if fs.existsSync(@folderName)
 
         @log.writeln(
@@ -38,9 +30,7 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
           #{chalk.red("ERROR:")} Directory #{@folderName} already exists. Remove it to continue.
           """
         )
-
-        @failed = true
+        process.exit(1)
 
       else
-
         @directory "applications/default/", @folderName
