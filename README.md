@@ -5,6 +5,7 @@ A [Yeoman](http://yeoman.io) generator for [Steroids](https://github.com/appgyve
 ### Available generators
 
 * `steroids:ng-resource` – generates an AngularJS-based resource using local data.
+* `steroids:ng-scaffold` – generates an Angular.js CRUD scaffold to work with a REST-API.
 * `steroids:example:<exampleName>` – Generates an example demonstrating a Steroids feature.
 
 ## Installation
@@ -30,6 +31,14 @@ For an AngularJS-based resource:
 ```
 yo steroids:ng-resource
 ```
+
+and give your resource a name. The resource files will be created and Bower will install all required dependencies.
+
+For an Angular.js CRUD scaffold:
+
+```
+yo steroids:ng-scaffold
+````
 
 and give your resource a name. The resource files will be created and Bower will install all required dependencies.
 
