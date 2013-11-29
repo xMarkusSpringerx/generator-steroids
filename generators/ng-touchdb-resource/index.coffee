@@ -1,5 +1,6 @@
 path = require "path"
 yeoman = require "yeoman-generator"
+chalk = require "chalk"
 
 module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -10,12 +11,11 @@ module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.Name
     @on "end", ->
       @log.writeln(
         """
+        #{chalk.bold("ng-touchdb-resource")} created! Set the location of your app to
 
-        ng-touchdb-resource created! Set the location of your app to
+          #{chalk.green("http://localhost/views/#{@resourceName}/index.html")}
 
-          "http://localhost/views/#{@resourceName}/index.html"
-
-        and then open app/models/#{@resourceName}.js and change the URL/credentials of 
+        and then open app/models/#{@resourceName}.js and change the URL/credentials of
         the external database to your own database.
 
         In the meantime, we'll install the Bower dependencies:
@@ -30,7 +30,7 @@ module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.Name
     # select base filename for example
     prompts = [
       name: "resourceName"
-      message: "What would you like to name your ng-resource?"
+      message: "What would you like to name your ng-touchdb-resource?"
       default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
