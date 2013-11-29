@@ -1,6 +1,7 @@
 path = require "path"
 yeoman = require "yeoman-generator"
 chalk = require "chalk"
+Bower = require "../../lib/Bower"
 
 module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -22,7 +23,8 @@ module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.Name
 
         """
       )
-      @bowerInstall([ 'angular#1.2.0', 'underscore#1.5.1', 'CornerCouch#*' ], { save: true });
+      bower = new Bower
+      bower.install([ 'angular#1.2.0', 'underscore#1.5.1', 'CornerCouch#*' ], { save: true });
 
   askFor: ->
     cb = @async()

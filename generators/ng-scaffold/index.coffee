@@ -1,6 +1,7 @@
 path = require "path"
 yeoman = require "yeoman-generator"
 chalk = require "chalk"
+Bower = require "../../lib/Bower"
 
 module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -19,7 +20,8 @@ module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
 
         """
       )
-      @bowerInstall([ 'angular#1.0.7', 'underscore#1.5.1', 'restangular#1.0.7' ], { save: true });
+      bower = new Bower
+      bower.install([ 'angular#1.0.7', 'underscore#1.5.1', 'restangular#1.0.7' ], { save: true });
 
   askFor: ->
     cb = @async()

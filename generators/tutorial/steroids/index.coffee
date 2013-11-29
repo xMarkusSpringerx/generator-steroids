@@ -2,6 +2,7 @@ path = require "path"
 chalk = require "chalk"
 yeoman = require "yeoman-generator"
 fs = require "fs"
+Bower = require "../../../lib/Bower"
 
 module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
   constructor: (args, options, config) ->
@@ -37,7 +38,8 @@ module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
 
         """
       )
-      @bowerInstall([ 'jquery#2.0.x'], { save: true });
+      bower = new Bower
+      bower.install([ 'jquery#2.0.x'], { save: true })
 
   createTutorial: ->
     @log.writeln(

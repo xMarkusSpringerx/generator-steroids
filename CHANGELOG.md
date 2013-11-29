@@ -1,3 +1,10 @@
+#0.2.5 (2013-11-29)
+
+Use Bower from `node_modules` instead of requiring user to have a global Bower install.
+
+Changes:
+  - Generators run Bower from `node_modules` instead of using global Bower.
+
 #0.2.4 (2013-11-29)
 
 New generator `application-config` for dynamically generating application config files for a new project.

@@ -1,6 +1,7 @@
 path = require "path"
 yeoman = require "yeoman-generator"
 chalk = require "chalk"
+Bower = require "../../lib/Bower"
 
 module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -19,7 +20,8 @@ module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
 
         """
       )
-      @bowerInstall([ 'jquery#2.0.x', 'underscore#1.5.1', 'backbone#1.0.x' ], { save: true });
+      bower = new Bower
+      bower.install([ 'jquery#2.0.x', 'underscore#1.5.1', 'backbone#1.0.x' ], { save: true });
 
   askFor: ->
     cb = @async()
