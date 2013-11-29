@@ -1,3 +1,7 @@
+#0.2.3 (2013-11-29)
+
+Fixed missing `chalk` dependency.
+
 #0.2.2 (2013-11-29)
 
 New generators added, instructions grammar/clarity fixes.

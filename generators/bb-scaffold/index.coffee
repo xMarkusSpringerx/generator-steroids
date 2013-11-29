@@ -1,5 +1,6 @@
 path = require "path"
 yeoman = require "yeoman-generator"
+chalk = require "chalk"
 
 module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->

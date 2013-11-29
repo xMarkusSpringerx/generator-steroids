@@ -1,5 +1,6 @@
 path = require "path"
 yeoman = require "yeoman-generator"
+chalk = require "chalk"
 
 module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -10,8 +11,7 @@ module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
     @on "end", ->
       @log.writeln(
         """
-
-        ng-scaffold created! Set the location of your app to
+        \n#{chalk.bold("ng-scaffold")} created! Set the location of your app to
 
           "http://localhost/views/#{@resourceName}/index.html"
 
