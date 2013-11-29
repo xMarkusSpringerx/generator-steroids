@@ -1,3 +1,15 @@
+#0.2.2 (2013-11-29)
+
+New generators added, instructions grammar/clarity fixes.
+
+Features:
+  - New generators added:
+    - `steroids:tutorial:begin`
+    - `steroids:tutorial:steroids`
+    - `steroids:tutorial:controllers`
+    - `steroids:ng-touchdb-resource`
+    - `steroids:bb-scaffold`
+
 #0.2.1 (2013-11-28)
 
 Fixed new project template `package.json`'s `grunt-steroids` dependency.
