@@ -10,7 +10,7 @@ module.exports = class ExampleGenerator extends yeoman.generators.Base
 
   printInfo: ->
     if @exampleName is "undefined" or "example"
-      @log.writeln("#{chalk.bold.red("Error:")} You must specify an example name.\n")
+      @log.writeln("#{chalk.bold.red("Error:")} You must specify a valid example name.\n")
     else
       @log.writeln("#{chalk.bold.red("Error:")} Example #{chalk.bold(@exampleName)} not found!\n")
 
