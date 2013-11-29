@@ -1,6 +1,7 @@
 path = require "path"
 chalk = require "chalk"
 yeoman = require "yeoman-generator"
+fs = require "fs"
 
 module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
   constructor: (args, options, config) ->
@@ -41,6 +42,13 @@ module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
 
       """
     )
+    if fs.existsSync("config/application.coffee")
+      @log.writeln(
+        """
+        One more thing! The file at 'config/application.coffee' needs to be overwritten. Make sure you accept it.
+
+        """
+      )
 
     @mkdir "app/views"
     
