@@ -17,7 +17,6 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
         process.exit(1)
 
     @on "end", ->
-      process.chdir(@folderName)
       @installDependencies()
 
 
@@ -26,7 +25,6 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
       required: true
     }
 
-  app: ->
     if fs.existsSync(@folderName)
 
       @log.writeln(
@@ -36,5 +34,11 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
       )
       process.exit(1)
 
-    else
-      @directory "applications/default/", @folderName
+    @destinationRoot @folderName
+
+    @hookFor 'steroids:application-config', {
+      args: [@folderName, "index.html"]
+    }
+
+  app: ->
+    @directory "applications/default/", "./"
