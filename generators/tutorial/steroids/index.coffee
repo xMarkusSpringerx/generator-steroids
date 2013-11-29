@@ -34,7 +34,7 @@ module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
       )
       @bowerInstall([ 'jquery#2.0.x'], { save: true });
 
-  createExample: ->
+  createTutorial: ->
     @log.writeln(
       """
       Generating Steroids tutorial...

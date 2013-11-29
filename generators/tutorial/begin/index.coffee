@@ -32,7 +32,7 @@ module.exports = class BeginTutorialGenerator extends yeoman.generators.Base
         """
       )
 
-  createExample: ->
+  createTutorial: ->
     @log.writeln(
       """
       Generating Tutorial...
