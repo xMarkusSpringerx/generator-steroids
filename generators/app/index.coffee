@@ -21,7 +21,6 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
         skipInstall: @options['skip-install'] || false
       }
 
-
     @argument 'folderName', {
       type: String
       required: true
