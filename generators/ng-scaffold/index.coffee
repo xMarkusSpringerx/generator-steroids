@@ -33,7 +33,7 @@ module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
           return true
         else
-          return "Resource name must start with lowercase letter and not contain whitespace."
+          return "Scaffold name must start with lowercase letter and not contain whitespace."
     ]
 
     @prompt prompts, (props) =>

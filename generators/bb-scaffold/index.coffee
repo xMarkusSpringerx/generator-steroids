@@ -10,8 +10,7 @@ module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
     @on "end", ->
       @log.writeln(
         """
-
-        bb-scaffold created! Set the location of your app to
+        \n#{chalk.bold("bb-scaffold")} created! Set the location of your app to
 
           "http://localhost/views/#{@resourceName}/index.html"
 
@@ -27,13 +26,13 @@ module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
     # select base filename for example
     prompts = [
       name: "resourceName"
-      message: "What would you like to name your bb-resource?"
+      message: "What would you like to name your bb-scaffold?"
       default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
           return true
         else
-          return "Resource name must start with lowercase letter and not contain whitespace."
+          return "Scaffold name must start with lowercase letter and not contain whitespace."
     ]
 
     @prompt prompts, (props) =>

@@ -1,5 +1,6 @@
 path = require "path"
 yeoman = require "yeoman-generator"
+chalk = require "chalk"
 
 module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBase
   constructor: (args, options, config) ->
@@ -10,8 +11,7 @@ module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBas
     @on "end", ->
       @log.writeln(
         """
-
-        ng-sql-scaffold created! Set the location of your app to
+        \n#{chalk.bold("ng-sql-scaffold")} created! Set the location of your app to
 
           "http://localhost/views/#{@resourceName}/index.html"
 
@@ -28,13 +28,13 @@ module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBas
     # select base filename for example
     prompts = [
       name: "resourceName"
-      message: "What would you like to name your ng-sql-scaffold resource?"
+      message: "What would you like to name your ng-sql-scaffold?"
       default: @default
       validate: (input)->
         if input.indexOf(" ") is -1 and /^[a-z]/.test(input)
           return true
         else
-          return "Resource name must start with lowercase letter and not contain whitespace."
+          return "Scaffold name must start with lowercase letter and not contain whitespace."
     ]
 
     @prompt prompts, (props) =>
