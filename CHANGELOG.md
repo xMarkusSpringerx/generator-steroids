@@ -1,6 +1,13 @@
+#0.2.4 (2013-11-29)
+
+New generator `application-config` for dynamically generating application config files for a new project.
+
+Changes:
+  - `steroids:app` generator uses `steroids:application-config` internally to generate `config/application.coffee`
+
 #0.2.3 (2013-11-29)
 
-Fixed missing `chalk` dependency.
+Fixed missing `chalk` dependency in `bb-scaffold` generator.
 
 #0.2.2 (2013-11-29)
 
