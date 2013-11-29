@@ -1,3 +1,10 @@
+#0.2.6 (2013-11-29)
+
+Install only npm dependencies when generating a new Steroids project with `steroids:app` generator.
+
+Changes:
+  - New projects only install npm dependencies (`bower install` is not run).
+
 #0.2.5 (2013-11-29)
 
 Use Bower from `node_modules` instead of requiring user to have a global Bower install.
