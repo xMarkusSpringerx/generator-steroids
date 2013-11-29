@@ -14,10 +14,7 @@ module.exports = class ControllersTutorialGenerator extends yeoman.generators.Ba
 
             #{chalk.green("\"http://localhost/views/steroidsTutorial/controllers.html\"")}
 
-          Then reload the application.
-
-          Bower, do your dance:
-
+          and then reload the application.
           """
         )
 
@@ -26,17 +23,19 @@ module.exports = class ControllersTutorialGenerator extends yeoman.generators.Ba
     if not fs.existsSync("app/views/layouts/steroidsTutorial.html")
       @log.writeln(
         """
-        #{chalk.red("ERROR:")} Could not find file app/views/layouts/steroidsTutorial.html.
-        Please make sure you've generated the 'steroids' tutorial first with
-          #{chalk.bold("'$ steroids generate tutorial steroids'")}
-        }
+        #{chalk.red("Error:")} could not find file #{chalk.bold("app/views/layouts/steroidsTutorial.html")}.
+
+        Please make sure you've generated the #{chalk.bold("steroids")} tutorial first with
+
+          #{chalk.bold("$ steroids generate tutorial steroids")}
+
         """
       )
       process.exit(1)
     else
       @log.writeln(
         """
-        Generating Controllers tutorial...
+        Generating tutorial #{chalk.bold("controllers")}...
 
         """
       )
