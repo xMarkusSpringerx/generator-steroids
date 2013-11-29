@@ -3,14 +3,14 @@
 <head>
   <title>Steroids Tutorial: Begin</title>
 
-  <link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.css" />
-  <link rel="stylesheet" href="stylesheets/application.css" />
+  <link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />
+  <link rel="stylesheet" href="/stylesheets/application.css" />
 
-  <script src="javascripts/onerror.js"></script>
+  <script src="/javascripts/onerror.js"></script>
 
   <!-- EXCERCISE 1: You found it! As you can see below, cordova.js is served from http://localhost/ – it doesn't even exist in the project files on your disk. The localhost server is running inside the Steroids app on your device. Since Steroids knows which platform it is running on, it can correctly serve either the iOS or Android version of cordova.js. -->
   <script src="http://localhost/cordova.js"></script>
-  <script src="components/steroids-js/steroids.js"></script>
+  <script src="/components/steroids-js/steroids.js"></script>
 </head>
 <body>
   <div class="content-padded">
@@ -51,7 +51,7 @@
 
   <h2>Exercise 3</h2>
 
-  <p><em>Note that after this exercise, you need to change <strong>config/application.coffee</strong>'s <strong>steroids.config.location</strong> property back to <strong>"tutorial.html"</strong> to return to this document, so be prepared!</em></p>
+  <p><em>Note that after this exercise, you need to change <strong>config/application.coffee</strong>'s <strong>steroids.config.location</strong> property back to <strong>"http://localhost/tutorial.html"</strong> to return to this document, so be prepared!</em></p>
 
   <p>To jump-start your development, Steroids comes bundled with several examples demonstarting Cordova APIs and other features of Steroids.</p>
 
