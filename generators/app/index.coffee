@@ -17,7 +17,9 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
         process.exit(1)
 
     @on "end", ->
-      @installDependencies()
+      @installDependencies {
+        skipInstall: @options['skip-install'] || false
+      }
 
 
     @argument 'folderName', {
