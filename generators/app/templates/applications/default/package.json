@@ -1,5 +1,5 @@
 {
-  "name": "mySteroidsProject",
+  "name": "<%= folderName %>",
   "version": "0.1.0",
   "description": "My awesome AppGyver Steroids project.",
   "repository": "N/A",
