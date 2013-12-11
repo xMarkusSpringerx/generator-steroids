@@ -8,7 +8,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT",
   "devDependencies": {
     "grunt-steroids": "0.1.x"
   },
