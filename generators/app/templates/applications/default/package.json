@@ -1,6 +1,6 @@
 {
   "name": "<%= folderName %>",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "My awesome AppGyver Steroids project.",
   "repository": "N/A",
   "readme":"N/A",
