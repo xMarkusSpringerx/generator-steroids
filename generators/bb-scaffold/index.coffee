@@ -16,7 +16,7 @@ module.exports = class BbScaffoldGenerator extends yeoman.generators.NamedBase
 
           "http://localhost/views/#{@resourceName}/index.html"
 
-        In the meantime, we'll install the Bower dependencies:
+        In the meantime, we'll install the following Bower dependencies:
 
         """
       )

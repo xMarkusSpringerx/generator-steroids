@@ -18,7 +18,7 @@ module.exports = class NgResourceGenerator extends yeoman.generators.NamedBase
 
         and then modify the data in "www/data/#{@resourceName}.json"
 
-        In the meantime, we'll install the Bower dependencies:
+        In the meantime, we'll install the following Bower dependencies:
 
         """
       )

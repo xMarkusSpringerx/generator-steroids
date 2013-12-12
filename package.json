@@ -27,7 +27,11 @@
     "coffee-script": "1.6.3",
     "chalk": "0.3.0",
     "bower": "1.2.7",
-    "dargs": "0.1.0"
+    "dargs": "0.1.0",
+    "cardinal": "0.4.2",
+    "mout": "0.8.0",
+    "archy": "0.0.2",
+    "stringify-object": "0.1.7"
   },
   "devDependencies": {
     "mocha": "1.12.0"

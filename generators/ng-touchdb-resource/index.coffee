@@ -19,7 +19,7 @@ module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.Name
         and then open app/models/#{@resourceName}.js and change the URL/credentials of
         the external database to your own database.
 
-        In the meantime, we'll install the Bower dependencies:
+        In the meantime, we'll install the following Bower dependencies:
 
         """
       )
