@@ -50,3 +50,4 @@ module.exports = class SteroidsGenerator extends yeoman.generators.Base
 
   app: ->
     @directory "applications/default/", "./"
+    @copy "dotfiles/gitignore", ".gitignore"
