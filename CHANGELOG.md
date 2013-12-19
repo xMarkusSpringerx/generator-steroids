@@ -1,3 +1,10 @@
+#0.2.10 (2013-12-19)
+
+Updated default project template.
+
+Changes:
+  - Default project template updated to match Steroids CLI 3.1.9.
+
 #0.2.9 (2013-12-18)
 
 Tizen apps can execute in-line JavaScript
