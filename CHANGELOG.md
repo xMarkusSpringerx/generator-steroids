@@ -1,3 +1,10 @@
+#0.2.9 (2013-12-18)
+
+Tizen apps can execute in-line JavaScript
+
+Changes:
+  - Allow in-line script running in Tizen apps (new config.tizen.xml)
+
 #0.2.8 (2013-12-13)
 
 `.gitignore` creation fixed, default project version "0.0.1"
