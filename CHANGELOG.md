@@ -1,3 +1,10 @@
+#0.2.11 (2013-12-24)
+
+Clarified Android usage instructions in default project's `index.html`.
+
+Changes:
+  - Default project's `index.html` no longer mentions deprecated Android long-press-to-quit gesture, but instead instructs user to use the native back button to exit to desktop.
+
 #0.2.10 (2013-12-19)
 
 Updated default project template.
