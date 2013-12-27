@@ -1,3 +1,10 @@
+#0.2.12 (2013-12-27)
+
+Fixed bug with Bower require on Linux and Windows machines.
+
+Bugfixes:
+  - Generators that install Bower dependencies no longer fail on Windows or Linux.
+
 #0.2.11 (2013-12-24)
 
 Clarified Android usage instructions in default project's `index.html`.
