@@ -2,7 +2,7 @@ sbawn = require "./sbawn"
 dargs = require "dargs"
 path = require "path"
 chalk = require "chalk"
-bower = require "Bower"
+bower = require "bower"
 Renderer = require "./BowerRenderer"
 
 module.exports = class Bower
