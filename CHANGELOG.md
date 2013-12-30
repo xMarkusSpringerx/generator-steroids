@@ -1,3 +1,8 @@
+#0.2.13 (TODO)
+
+Bugfixes:
+  - Updated default projects' `plugins/README.md` to conform to 3.1.x way of installing plugins.
+
 #0.2.12 (2013-12-27)
 
 Fixed bug with Bower require on Linux and Windows machines.
