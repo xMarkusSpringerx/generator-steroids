@@ -1,7 +1,10 @@
-#0.2.13 (TODO)
+#0.2.13 (2013-01-10)
+
+Fixed minor non-breaking plugin issues.
 
 Bugfixes:
   - Updated default projects' `plugins/README.md` to conform to 3.1.x way of installing plugins.
+  - Removed manual inclusion of JavaScript for `ng-sql-scaffold` generator.
 
 #0.2.12 (2013-12-27)
 
