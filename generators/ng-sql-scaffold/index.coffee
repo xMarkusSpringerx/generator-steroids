@@ -53,8 +53,6 @@ module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBas
     @copy "www/vendor/persistencejs/persistence.js", "www/vendor/persistencejs/persistence.js"
     @copy "www/vendor/persistencejs/persistence.store.sql.js", "www/vendor/persistencejs/persistence.store.sql.js"
     @copy "www/vendor/persistencejs/persistence.store.websql.js", "www/vendor/persistencejs/persistence.store.websql.js"
-    @copy "www/javascripts/plugins/sqliteplugin.js", "www/javascripts/plugins/sqliteplugin.js"
-    @copy "www/javascripts/plugins/sqliteplugin.android.js", "www/javascripts/plugins/sqliteplugin.android.js"
     @copy "www/stylesheets/resourceName.css", "www/stylesheets/#{@resourceName}.css"
 
     @template "app/controllers/_resourceName.js", "app/controllers/#{@resourceName}.js"

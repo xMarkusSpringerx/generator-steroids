@@ -1,4 +1,11 @@
-#0.2.13 (2013-01-10)
+#0.2.14 (2014-01-14)
+
+Fixed crashing error with `ng-sql-scaffold` generator
+
+Bugfixes:
+  - `ng-sql-scaffold` no longer tries to copy nonexistent plugin JavaScript files.
+
+#0.2.13 (2014-01-10)
 
 Fixed minor non-breaking plugin issues.
 
