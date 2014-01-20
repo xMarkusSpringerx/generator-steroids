@@ -7,12 +7,14 @@ var <%= resourceName %>App = angular.module('<%= resourceName %>App', ['<%= _.ca
 
   // Helper function for opening new webviews
   $scope.open = function(id) {
-    webView = new steroids.views.WebView("/views/<%= resourceName %>/show.html?id="+id);
+    var webView = new steroids.views.WebView("/views/<%= resourceName %>/show.html?id="+id);
     steroids.layers.push(webView);
   };
 
   // Fetch all objects from the local JSON (see app/models/<%= resourceName %>.js)
-  $scope.<%= resourceName %>s = <%= _.capitalize(resourceName) %>Restangular.all('<%= resourceName %>').getList();
+  <%= _.capitalize(resourceName) %>Restangular.all('<%= resourceName %>').getList().then( function(<%= resourceName %>s) {
+    $scope.<%= resourceName %>s = <%= resourceName %>s;
+  });
 
   // -- Native navigation
   steroids.view.navigationBar.show("<%= _.capitalize(resourceName) %> index");
