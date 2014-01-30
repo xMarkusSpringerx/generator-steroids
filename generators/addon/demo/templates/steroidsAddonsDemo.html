@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steroids Addons Demo</title>
+
+    <link rel="stylesheet" href="vendor/topcoat/css/topcoat-mobile-light.css" />
+    <link rel="stylesheet" href="stylesheets/application.css" />
+
+    <!-- cordova.js is served from localhost to ensure the correct version -->
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script>
+    <script src="/components/steroids-addons/dist/steroids.addons.js"></script>
+    
+    <script>
+    // APIs without Steroids Addons require manual initialization every time to ensure they're ready.
+    // Steroids Addons you can just use. Let's try the Geolocation Addon.
+
+    var positions = steroids.addons.geolocation.watchPosition();
+
+    // This is a stream of incoming values from the GPS. You'll get a new value every time the position is updated.
+
+    positions.onValue(function(position) {
+        console.log("We've got a position!");
+    });
+
+    // You can react to failures if you want, but you can also choose to focus on the happy path.
+
+    positions.onError(function(error) {
+        alert("Couldn't get position! \n\n Error code: " + error.code + "\n" + "Error message: " + error.message);
+    });
+
+    // Let's do something with the position data we get. How about formatting it as HTML?
+
+    var formattedPositions = positions.map(function(position) {
+        return  '<strong>Latitude:</strong> '           + position.coords.latitude         + '<br>' +
+                '<strong>Longitude:</strong> '          + position.coords.longitude        + '<br>' +
+                '<strong>Altitude:</strong> '           + position.coords.altitude         + '<br>' +
+                '<strong>Accuracy:</strong> '           + position.coords.accuracy         + '<br>' +
+                '<strong>Altitude Accuracy:</strong> '  + position.coords.altitudeAccuracy + '<br>' +
+                '<strong>Heading:</strong> '            + position.coords.heading          + '<br>' +
+                '<strong>Speed:</strong> '              + position.coords.speed            + '<br>' +
+                '<strong>Timestamp:</strong> '          + position.timestamp;
+    });
+
+    // Alright, that's pretty basic. Now we're ready to put our results somewhere the user can see them.
+
+    formattedPositions.onValue(function(formattedPosition) {
+        var resultsElement = document.querySelector("#geolocation-results");
+        resultsElement.innerHTML = formattedPosition;
+    });
+
+    </script>
+  </head>
+  <body>
+    <div class="content-padded">
+      <h1>Geolocation Example</h1>
+      <p id="geolocation-results">Waiting for geolocation data...</p>
+    </div>
+  </body>
+</html>
