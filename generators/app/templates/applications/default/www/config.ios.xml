@@ -16,6 +16,9 @@
     <preference name="KeyboardShrinksView" value="false" />
     <preference name="SuppressesIncrementalRendering" value="false" />
 
+    <preference name="AutoHideSplashscreen" value="true"/>
+    <preference name="EnablePopGestureRecognition" value="false" />
+    <preference name="DisableTabBarUnselectedIconTintColor" value="true" />
 
     <preference name="PaginationMode" value="unpaginated"/>
     <preference name="PageLength" value="0"/>

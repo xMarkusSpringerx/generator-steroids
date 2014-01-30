@@ -1,3 +1,8 @@
+#0.2.15 (TODO)
+
+Features:
+  - Added new preferences that are supported by 3.1.2 iOS client
+
 #0.2.14 (2014-01-14)
 
 Fixed crashing error with `ng-sql-scaffold` generator
