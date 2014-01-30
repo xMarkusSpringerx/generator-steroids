@@ -2,17 +2,17 @@ chalk = require "chalk"
 yeoman = require "yeoman-generator"
 Bower = require "../../../lib/Bower"
 
-module.exports = class SteroidsAddonsDemo extends yeoman.generators.Base
+module.exports = class SteroidsAddonsExample extends yeoman.generators.Base
   constructor: (args, options, config) ->
     super arguments...
 
     @on "end", ->
       @log.writeln(
         """
-        \nSteroids Addons demo created! In #{chalk.bold("config/application.coffee")}, set the
+        \nSteroids Addons example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"steroidsAddonsDemo.html\"")}
+          #{chalk.green("\"steroidsAddonsExample.html\"")}
 
         In the meantime, we'll install the following Bower dependencies:
 
@@ -27,9 +27,9 @@ module.exports = class SteroidsAddonsDemo extends yeoman.generators.Base
   createExample: ->
     @log.writeln(
       """
-      Generating Steroids Addons demo...
+      Generating Steroids Addons example...
 
       """
     )
 
-    @copy "steroidsAddonsDemo.html", "www/steroidsAddonsDemo.html"
+    @copy "steroidsAddonsExample.html", "www/steroidsAddonsExample.html"
