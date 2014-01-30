@@ -17,6 +17,7 @@ module.exports = class ExampleGenerator extends yeoman.generators.Base
     @log.writeln(
       """
       Available examples:
+        - #{chalk.green.bold("addons")} – Test drive Steroids Addons for simpler access to APIs.
         - #{chalk.green.bold("accelerometer")} – Access the device's accelerometer.
         - #{chalk.green.bold("animation")} – Using native animations without moving to another document (iOS-only).
         - #{chalk.green.bold("audio")} – Play back audio files through Cordova's Media API.

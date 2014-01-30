@@ -49,6 +49,7 @@ Options:
 __exampleName__: name of the example to generate.
 
 Available examples:
+* addons -- Test drive Steroids Addons for simpler access to APIs.
 * accelerometer -- Access the device's accelerometer.
 * animation -- Using native animations without moving to another document (iOS-only).
 * audio -- Play back audio files through Cordova's Media API.
