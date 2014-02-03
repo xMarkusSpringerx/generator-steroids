@@ -22,7 +22,7 @@ module.exports = class NgSqlScaffoldGenerator extends yeoman.generators.NamedBas
         """
       )
       bower = new Bower
-      bower.install([ 'angular#1.0.7', 'underscore#1.5.1'], { save: true });
+      bower.install([ 'angular#1.2.9', 'underscore#1.5.1'], { save: true });
 
   askFor: ->
     cb = @async()

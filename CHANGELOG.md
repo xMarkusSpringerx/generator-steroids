@@ -1,3 +1,7 @@
+#0.2.15 (2014-02-03)
+
+Updated `angular.js` from 1.0.7 to 1.2.9
+
 #0.2.14 (2014-01-14)
 
 Fixed crashing error with `ng-sql-scaffold` generator

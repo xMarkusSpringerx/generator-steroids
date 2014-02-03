@@ -21,7 +21,7 @@ module.exports = class NgScaffoldGenerator extends yeoman.generators.NamedBase
         """
       )
       bower = new Bower
-      bower.install([ 'angular#1.0.7', 'underscore#1.5.1', 'restangular#1.0.7' ], { save: true });
+      bower.install([ 'angular#1.2.9', 'underscore#1.5.1', 'restangular#1.2.2' ], { save: true });
 
   askFor: ->
     cb = @async()

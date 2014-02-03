@@ -24,7 +24,7 @@ module.exports = class NgTouchdbResourceGenerator extends yeoman.generators.Name
         """
       )
       bower = new Bower
-      bower.install([ 'angular#1.2.0', 'underscore#1.5.1', 'CornerCouch#*' ], { save: true });
+      bower.install([ 'angular#1.2.9', 'underscore#1.5.1', 'CornerCouch#*' ], { save: true });
 
   askFor: ->
     cb = @async()
