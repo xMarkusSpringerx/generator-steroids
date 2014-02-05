@@ -8,4 +8,5 @@
       AppGyver Steroids Team
   </author>
   <access origin="*" />
+  <preference name="fullscreen" value="false"/>
 </widget>

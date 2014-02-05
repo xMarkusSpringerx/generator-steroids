@@ -1,3 +1,8 @@
+#0.2.15 (TO DO)
+
+Changes:
+  - Added the `fullscreen` preference to the default config.android.xml
+
 #0.2.14 (2014-01-14)
 
 Fixed crashing error with `ng-sql-scaffold` generator
