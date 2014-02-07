@@ -9,22 +9,4 @@
     </author>
     <access origin="*" />
 
-    <!--
-
-    The following features are used by Steroids Addons. To learn more, head on over to
-      http://www.appgyver.com/steroids/addons/
-
-    <feature name="http://appgyver.com/steroids/addons/facebook">
-        <param name="appId" value="123456789012345" />
-    </feature>
-
-    <feature name="http://appgyver.com/steroids/addons/geolocation">
-        <param name="continuousUpdates" value="true" />
-    </feature>
-
-    <feature name="http://appgyver.com/steroids/addons/oauthio">
-        <param name="publicKey" value="asdFGH-qweRTY-uioPKL-mnbVCX" />
-    </feature>
-
-    -->
 </widget>

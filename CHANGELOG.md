@@ -5,7 +5,6 @@ New `config.xml` options for Scanner v3.1.2 compatibility.
 Features:
 - Default `config.ios.xml` includes new features (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-ios/) for details)
 - Default `config.android.xml` includes a new feature (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-android/) for details)
-- Default `config.xml` includes example configs for [Steroids Addons](http://www..appgyver.com/steroids/addons/)
 
 #0.2.14 (2014-01-14)
 
