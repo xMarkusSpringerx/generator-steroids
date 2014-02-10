@@ -1,7 +1,13 @@
-#0.2.15 (TO DO)
+#0.2.15 (2014-0)
 
-Changes:
-  - Added the `fullscreen` preference to the default config.android.xml
+New `config.xml` options for Scanner v3.1.2 compatibility.
+
+Features:
+- Default `config.ios.xml` includes new preferences (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-ios/) for details):
+  - `EnablePopGestureRecognition` - enable/disable iOS7 swipe-to-go-back gesture
+  - `DisableTabBarUnselectedIconTintColor` - disables tab bar unselected 
+  -  `AutoHideSplashScreen`
+- Default `config.android.xml` includes a new `fullscreen` preference (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-android/) for details)
 
 #0.2.14 (2014-01-14)
 
