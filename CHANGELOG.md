@@ -1,11 +1,11 @@
-#0.2.15 (2014-0)
+#0.2.15 (2014-02-10)
 
 New `config.xml` options for Scanner v3.1.2 compatibility.
 
 Features:
 - Default `config.ios.xml` includes new preferences (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-ios/) for details):
-  - `EnablePopGestureRecognition` - enable/disable iOS7 swipe-to-go-back gesture
-  - `DisableTabBarUnselectedIconTintColor` - disables tab bar unselected 
+  - `EnablePopGestureRecognition`
+  - `DisableTabBarUnselectedIconTintColor`
   -  `AutoHideSplashScreen`
 - Default `config.android.xml` includes a new `fullscreen` preference (see the [guide](http://guides.appgyver.com/steroids/guides/project_configuration/config-xml-android/) for details)
 
