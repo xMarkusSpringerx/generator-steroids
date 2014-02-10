@@ -1,3 +1,7 @@
+#0.2.16 (2014-02-10)
+
+Updated default project's Steroids.js to v3.1.4.
+
 #0.2.15 (2014-02-10)
 
 New `config.xml` options for Scanner v3.1.2 compatibility.
