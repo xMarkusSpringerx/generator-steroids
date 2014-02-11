@@ -1,3 +1,7 @@
+#0.2.17 (2014-02-11)
+
+Updated default project's Steroids.js to v3.1.5.
+
 #0.2.16 (2014-02-10)
 
 Updated default project's Steroids.js to v3.1.4.
