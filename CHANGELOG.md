@@ -1,6 +1,10 @@
 #0.2.18 (2014-02-27)
 
-Updated default project's Steroids.js to v3.1.6.
+Updated default project's Steroids.js to v3.1.6, bugfixes.
+
+Bugfixes:
+- Spelling error in `begin` tutorial corrected.
+- Added missing `<access origin="*" />` preferences to default projects' `config.android.xml` and `config.ios.xml`.
 
 #0.2.17 (2014-02-11)
 
