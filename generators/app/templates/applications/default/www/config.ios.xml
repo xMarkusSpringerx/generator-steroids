@@ -6,6 +6,8 @@
       -->
     <access origin="*" />
 
+    <preference name="StatusBarPushWebView" value="true" />
+
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="DisallowOverscroll" value="false" />
     <preference name="EnableViewportScale" value="false" />
