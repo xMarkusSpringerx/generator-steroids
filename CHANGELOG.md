@@ -1,3 +1,15 @@
+#0.2.20 (2014-04-03)
+
+Updated default project's Steroids.js to v3.1.8, added new iOS Scanner [v3.1.4](https://github.com/AppGyver/scanner/blob/master/changelog-ios.md#314-2014-04-03) preferences to default project's `www/config.ios.xml`.
+
+Changes:
+- Removed `cordova-loader.js` in favor of a manual solution (until a better one is introduced).
+
+#0.2.19 (2014-03-26)
+
+Load Cordova using a cordova-loader.js wrapper in default www/index.html to overcome issue #136 on Android.
+See https://github.com/AppGyver/scanner/issues/136 for further information.
+
 #0.2.18 (2014-02-27)
 
 Updated default project's Steroids.js to v3.1.6, bugfixes.

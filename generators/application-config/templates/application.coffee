@@ -32,7 +32,6 @@ steroids.config.location = "http://localhost/<%= initialView %>"
 steroids.config.navigationBar.tintColor = "#00aeef"
 steroids.config.navigationBar.titleColor = "#ffffff"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
-steroids.config.navigationBar.buttonTitleColor = "#ffffff"
 
 # steroids.config.navigationBar.landscape.backgroundImage = ""
 # steroids.config.navigationBar.portrait.backgroundImage = ""
