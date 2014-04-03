@@ -1,8 +1,3 @@
-#0.2.19 (2014-03-26)
-
-Load Cordova using a cordova-loader.js wrapper in default www/index.html to overcome issue #136 on Android.
-See https://github.com/AppGyver/scanner/issues/136 for further information.
-
 #0.2.18 (2014-02-27)
 
 Updated default project's Steroids.js to v3.1.6, bugfixes.
