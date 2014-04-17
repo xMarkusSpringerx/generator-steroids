@@ -30,16 +30,8 @@ module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
 
         Then, hit enter on the Steroids console and you should see the
         application reload with tabs.
-
-        We'll also install a required component (jQuery) via Bower. Bower
-        components are configured via the #{chalk.bold("bower.json")} file in your project root.
-
-        Bower, do your magic!
-
         """
       )
-      bower = new Bower
-      bower.install([ 'jquery#2.0.x'], { save: true })
 
   createTutorial: ->
     @log.writeln(

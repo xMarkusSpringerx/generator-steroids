@@ -1,5 +1,5 @@
 # For an explanation of the steroids.config properties, see the guide at
-# http://guides.appgyver.com/steroids/guides/project_configuration/config-application-coffee/
+# http://academy.appgyver.com/categories/9/contents/70
 
 steroids.config.name = "Steroids Tutorial"
 
@@ -37,7 +37,6 @@ steroids.config.location = "http://localhost/index.html"
 steroids.config.navigationBar.tintColor = "#00aeef"
 steroids.config.navigationBar.titleColor = "#ffffff"
 steroids.config.navigationBar.buttonTintColor = "#ffffff"
-steroids.config.navigationBar.buttonTitleColor = "#ffffff"
 
 # steroids.config.navigationBar.landscape.backgroundImage = ""
 # steroids.config.navigationBar.portrait.backgroundImage = ""
