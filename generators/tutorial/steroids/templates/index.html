@@ -57,13 +57,13 @@
   // To inline JavaScript here is suboptimal and only used in this tutorial.
   // The Steroids.js API documentation is at http://docs.appgyver.com
 
-  steroids.view.navigationBar.show("PhoneGap on Steroids")
+  steroids.view.navigationBar.show("PhoneGap on Steroids");
 
   // In the next part of this tutorial we learn how to do this properly with external JavaScript files
 
-  function openShow()
+  function openShow() {
     var otherView = new steroids.views.WebView("/views/steroidsTutorial/show.html");
     steroids.layers.push(otherView);
-  });
+  }
 
 </script>
