@@ -4,23 +4,21 @@
 
 <p>Good! You made it all the way to the controllers tutorial. Now, let's walk through the concept of <strong>controllers</strong>.</p>
 
-<p>We created an <strong>app/controllers/</strong> directory for you. It contains two files: <strong>application.js</strong> and <strong>steroidsTutorial.js</strong>. From now on, let's not include any JavaScript in our views, okay?</p>
+<p>We created an <code>app/controllers/</code> directory for you. It contains a controller file: <code>steroidsTutorial.js</code>. From now on, let's not include any JavaScript in our views, okay?</p>
 
 <h2>Using view controllers</h2>
 
-<p>In the application wide layout <strong><small>app/views/layouts/steroidsTutorial.html</small></strong> there is a <strong><small>&lt;script&gt;</small></strong>-tag that automatically includes a controller for this resource (steroidsTutorial). Open <strong><small>app/controllers/steroidsTutorial.js</small></strong> and enable the top bar.</p>
+<p>In the application wide layout <code><small>app/views/layouts/steroidsTutorial.html</small></code> there is a <code><small>&lt;script&gt;</small></code> tag that automatically includes a controller for this resource (steroidsTutorial). Open <code><small>app/controllers/steroidsTutorial.js</small></code> and enable the navigation bar.</p>
 
 <h2>Application controllers</h2>
 
-<p>We also include <strong>application.js</strong> for every view. Open that application controller and see how we extracted the previous inlined WebView opening to more <em>reusable</em> code.</p>
+<p>We also include <strong>app/controllers/application.js</strong> for every view. Open that application controller and see how we extracted the previous inlined WebView opening to more <em>reusable</em> code.</p>
 
 </div>
 
-<div class="topcoat-list__container">
-  <ul class="topcoat-list">
-    <li class="opensLayer topcoat-list__item" data-location="/views/steroidsTutorial/controllers-completed.html">
-      Got it, to the next part!
-      <span class="chevron"/>
-    </li>
-  </ul>
-</div>
+<ul class="list">
+  <li onClick="openLayer('show.html')" class="item item-icon-right">
+    To the next document!
+    <i class="icon ion-ios7-arrow-right"></i>
+  </li>
+</ul>
