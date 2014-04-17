@@ -1,4 +1,4 @@
-var <%= resourceName %>App = angular.module('<%= resourceName %>App', ['<%= _.capitalize(resourceName) %>Model', 'hmTouchevents']);
+var <%= resourceName %>App = angular.module('<%= resourceName %>App', ['<%= _.capitalize(resourceName) %>Model', 'ngTouch']);
 
 
 // Index: http://localhost/views/<%= resourceName %>/index.html
@@ -12,10 +12,13 @@ var <%= resourceName %>App = angular.module('<%= resourceName %>App', ['<%= _.ca
   };
 
   // Fetch all objects from the local JSON (see app/models/<%= resourceName %>.js)
-  $scope.<%= resourceName %>s = <%= _.capitalize(resourceName) %>Restangular.all('<%= resourceName %>').getList();
+  <%= _.capitalize(resourceName) %>Restangular.all('<%= resourceName %>').getList().then( function(<%= resourceName %>s) {
+    $scope.<%= resourceName %>s = <%= resourceName %>s;
+  });
 
-  // -- Native navigation
+  // Native navigation
   steroids.view.navigationBar.show("<%= _.capitalize(resourceName) %> index");
+  steroids.view.setBackgroundColor("#FFFFFF");
 
 });
 
@@ -27,10 +30,11 @@ var <%= resourceName %>App = angular.module('<%= resourceName %>App', ['<%= _.ca
   // Fetch all objects from the local JSON (see app/models/<%= resourceName %>.js)
   <%= _.capitalize(resourceName) %>Restangular.all('<%= resourceName %>').getList().then( function(<%= resourceName %>s) {
     // Then select the one based on the view's id query parameter
-    $scope.<%= resourceName %> = $filter('filter')(<%= resourceName %>s, {<%= resourceName %>_id: steroids.view.params['id']})[0];
+    $scope.<%= resourceName %> = $filter('filter')(<%= resourceName %>s, {id: steroids.view.params['id']})[0];
   });
 
-  // -- Native navigation
+  // Native navigation
   steroids.view.navigationBar.show("<%= _.capitalize(resourceName) %>: " + steroids.view.params.id );
+  steroids.view.setBackgroundColor("#FFFFFF");
 
 });

@@ -1,16 +1,8 @@
-<div ng-app="<%= resourceName %>App">
-
-  <div ng-controller="IndexCtrl">
-    <div class="topcoat-list__container">
-
-      <ul class="topcoat-list">
-        <li class="topcoat-list__item" hm-tap="open(<%= resourceName %>.<%= resourceName %>_id)" ng-repeat="<%= resourceName %> in <%= resourceName %>s">
-          <%= _.capitalize(resourceName) %>: {{ <%= resourceName %>.name }}
-        </li>
-      </ul>
-
-    </div>
-
-  </div>
-
+<div ng-controller="IndexCtrl">
+  <ul class="list">
+    <li class="item item-icon-right" ng-click="open(<%= resourceName %>.id)" ng-repeat="<%= resourceName %> in <%= resourceName %>s">
+      <%= _.capitalize(resourceName) %>: {{ <%= resourceName %>.name }}
+      <i class="icon ion-chevron-right"></i>
+    </li>
+  </ul>
 </div>

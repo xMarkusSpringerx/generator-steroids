@@ -2,7 +2,7 @@
 
 (function() {
 
-// Protects views where angular is not loaded from errors
+// Protects views where AngularJS is not loaded from errors
 if ( typeof angular == 'undefined' ) {
 	return;
 };

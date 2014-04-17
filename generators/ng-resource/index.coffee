@@ -23,7 +23,7 @@ module.exports = class NgResourceGenerator extends yeoman.generators.NamedBase
         """
       )
       bower = new Bower
-      bower.install([ 'angular#1.0.7', 'underscore#1.5.1', 'restangular#1.0.7' ], { save: true });
+      bower.install([ 'angular#1.2.16', 'angular-touch#1.2.16', 'restangular#1.3.1' ], { save: true });
 
   askFor: ->
     cb = @async()
@@ -50,7 +50,6 @@ module.exports = class NgResourceGenerator extends yeoman.generators.NamedBase
     @mkdir "app/views"
 
     @copy "app/views/layouts/resourceName.html", "app/views/layouts/#{@resourceName}.html"
-    @copy "www/vendor/angular-hammer/angular-hammer.js", "www/vendor/angular-hammer/angular-hammer.js"
 
     @template "app/controllers/_resourceName.js", "app/controllers/#{@resourceName}.js"
     @template "app/models/_resourceName.js", "app/models/#{@resourceName}.js"
