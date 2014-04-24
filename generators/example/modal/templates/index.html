@@ -1,14 +1,4 @@
 <script>
-
-  // Listen for window.postMessage() messages that the modal webview sends to us
-  window.addEventListener("message", function(msg) {
-
-    if ( msg.data.action == "closeModal" ) {
-      steroids.modal.hide();
-    }
-
-  });
-
   // Initialize the modal
   var modalView = new steroids.views.WebView("/views/modalExample/show.html");
 
@@ -22,9 +12,8 @@
 </script>
 
 
-<div class="content-padded">
+<div class="padding">
 
-  <div class="topcoat-button--cta full center" ontouchend="openModal()">Open modal</div>
+  <button class="button button-block" ontouchend="openModal()">Open modal</button>
 
 </div>
-

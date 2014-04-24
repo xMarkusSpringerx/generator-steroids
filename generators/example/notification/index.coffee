@@ -12,7 +12,7 @@ module.exports = class NotificationExampleGenerator extends yeoman.generators.Ba
         \nNotification example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"notificationExample.html\"")}
+          #{chalk.green("\"http://localhost/notificationExample.html\"")}
 
         """
       )

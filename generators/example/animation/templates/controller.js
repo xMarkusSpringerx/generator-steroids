@@ -13,8 +13,6 @@ function performAnimation(transition, duration) {
   // Perform it...
   anim.perform();
 
-  // And immediately update the screen. If you want to update screen when the animation has finished, hook it to the onSuccess of the animation's perform() method.
-
   if ( animationsPerformed[transition] === undefined ) {
     animationsPerformed[transition] = 1;
   } else {

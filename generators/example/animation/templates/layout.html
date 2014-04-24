@@ -4,7 +4,7 @@
   <meta charset="utf8">
   <title>Animation Example</title>
 
-  <link rel="stylesheet" href="/vendor/topcoat/css/topcoat-mobile-light.css" />
+  <link rel="stylesheet" href="/vendor/ionic/css/ionic.css" />
   <link rel="stylesheet" href="/stylesheets/application.css" />
 
   <script src="/javascripts/onerror.js"></script>
@@ -15,10 +15,10 @@
 
   <!-- Controllers can be loaded dynamically based on the resource name -->
   <!-- Find the JavaScript for the Animation example at app/controllers/animationExample.js -->
-  <script src="/controllers/<%= yield.controller %>.js"></script>  
+  <script src="/controllers/<%= yield.controller %>.js"></script>
 
 </head>
-<body>
+<body class="content">
 
   <%= yield.view %>
 

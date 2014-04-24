@@ -12,7 +12,7 @@ module.exports = class GeolocationExampleGenerator extends yeoman.generators.Bas
         \nGeolocation example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"geolocationExample.html\"")}
+          #{chalk.green("\"http://localhost/geolocationExample.html\"")}
 
         """
       )

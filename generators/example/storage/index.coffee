@@ -12,8 +12,8 @@ module.exports = class StorageExampleGenerator extends yeoman.generators.Base
         \nStorage example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"storageExample.html\"")}
-          
+          #{chalk.green("\"http://localhost/storageExample.html\"")}
+
         """
       )
 

@@ -12,7 +12,7 @@ module.exports = class DeviceExampleGenerator extends yeoman.generators.Base
         \nDevice example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"deviceExample.html\"")}
+          #{chalk.green("\"http://localhost/deviceExample.html\"")}
 
         """
       )

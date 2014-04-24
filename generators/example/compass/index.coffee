@@ -12,7 +12,7 @@ module.exports = class CompassExampleGenerator extends yeoman.generators.Base
         \nCompass example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"compassExample.html\"")}
+          #{chalk.green("\"http://localhost/compassExample.html\"")}
 
         """
       )
@@ -24,6 +24,5 @@ module.exports = class CompassExampleGenerator extends yeoman.generators.Base
 
       """
     )
-    
+
     @copy "compassExample.html", "www/compassExample.html"
-    

@@ -12,7 +12,7 @@ module.exports = class AccelerometerExampleGenerator extends yeoman.generators.B
         \nAccelerometer example created! In #{chalk.bold("config/application.coffee")}, set the
         location of your app to:
 
-          #{chalk.green("\"accelerometerExample.html\"")}
+          #{chalk.green("\"http://localhost/accelerometerExample.html\"")}
 
         """
       )
@@ -26,4 +26,3 @@ module.exports = class AccelerometerExampleGenerator extends yeoman.generators.B
     )
 
     @copy "accelerometerExample.html", "www/accelerometerExample.html"
-    
