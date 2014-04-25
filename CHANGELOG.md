@@ -1,3 +1,14 @@
+#0.3.0 (2014-04-25)
+
+Updated all generators to use the [Ionic CSS framework](http://www.ionicframework.com) and latest AngularJS where applicable. Deprecated several obsolete generators.
+
+Features:
+ - All generators (including the default app generator) include the Ionic CSS framework instead of Topcoat
+ - `ng-resource` updated to use AngularJS v1.2.16 and angular-touch instead of angular-hammer and Hammer.js.
+ - `ng-scaffold`, `bb-scaffold`, `ng-sql-scaffold` and `ng-touchdb-resource` generators deprecated
+ - `camera`, `drawer`, `layerStack`, `navigationBar` and `photoGallery` examples deprecated
+ - All examples moved to use localhost instead of File protocol
+
 #0.2.20 (2014-04-03)
 
 Updated default project's Steroids.js to v3.1.8, added new iOS Scanner [v3.1.4](https://github.com/AppGyver/scanner/blob/master/changelog-ios.md#314-2014-04-03) preferences to default project's `www/config.ios.xml`.
