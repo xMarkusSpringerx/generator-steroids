@@ -2,7 +2,7 @@
 
 Updated all generators to use the [Ionic CSS framework](http://www.ionicframework.com) and latest AngularJS where applicable. Deprecated several obsolete generators.
 
-Features:
+Changes:
  - All generators (including the default app generator) include the Ionic CSS framework instead of Topcoat
  - `ng-resource` updated to use AngularJS v1.2.16 and angular-touch instead of angular-hammer and Hammer.js.
  - `ng-scaffold`, `bb-scaffold`, `ng-sql-scaffold` and `ng-touchdb-resource` generators deprecated
