@@ -6,7 +6,7 @@ Changes:
  - All generators (including the default app generator) include the Ionic CSS framework instead of Topcoat
  - `ng-resource` updated to use AngularJS v1.2.16 and angular-touch instead of angular-hammer and Hammer.js.
  - `ng-scaffold`, `bb-scaffold`, `ng-sql-scaffold` and `ng-touchdb-resource` generators deprecated
- - `camera`, `drawer`, `layerStack`, `navigationBar` and `photoGallery` examples deprecated
+ - `camera`, `drawer`, `layerStack`, `navigationBar`, `photoGallery` and `s3upload` examples deprecated
  - All examples moved to use localhost instead of File protocol
 
 #0.2.20 (2014-04-03)
