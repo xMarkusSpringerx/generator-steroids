@@ -45,6 +45,7 @@ module.exports = class SteroidsTutorialGenerator extends yeoman.generators.Base
 
     @copy "layout.html", "app/views/layouts/steroidsTutorial.html"
     @copy "index.html", "app/views/steroidsTutorial/index.html"
+    @copy "index.android.html", "app/views/steroidsTutorial/index.android.html"
     @copy "show.html", "app/views/steroidsTutorial/show.html"
 
   overwriteApplicationCoffee: ->

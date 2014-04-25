@@ -1,3 +1,10 @@
+#0.3.1 (TODO)
+
+Fixed `steroids` tutorial on Android
+
+Bugfixes:
+  - `steroids` tutorial now correctly copies over `index.android.html`.
+
 #0.3.0 (2014-04-25)
 
 Updated all generators to use the [Ionic CSS framework](http://www.ionicframework.com) and latest AngularJS where applicable. Deprecated several obsolete generators.
