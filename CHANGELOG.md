@@ -1,6 +1,9 @@
-#0.3.1 (TODO)
+#0.3.1 (2014-05-06)
 
-Fixed `steroids` tutorial on Android
+New projects now include Steroids.js v3.1.9. Fixed `steroids` tutorial on Android.
+
+Changes:
+  - New projects now include Steroids.js v3.1.9 by default.
 
 Bugfixes:
   - `steroids` tutorial now correctly copies over `index.android.html`.
