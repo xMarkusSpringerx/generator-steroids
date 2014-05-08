@@ -39,40 +39,6 @@ yo steroids:<resource>
 and give your resource a name. The resource files will be created and Bower will install all required dependencies.
 
 
-For an example resource:
-
-```
-yo steroids:example:<exampleName>
-```
-
-Options:
-__exampleName__: name of the example to generate.
-
-Available examples:
-* accelerometer -- Access the device's accelerometer.
-* animation -- Using native animations without moving to another document (iOS-only).
-* audio -- Play back audio files through Cordova's Media API.
-* camera -- Access the device's camera and photo library.
-* compass -- Access the device's compass.
-* device -- Access the device properties.
-* drawer -- Using the native Facebook-style drawer (iOS-only).
-* drumMachine -- Demonstrate Steroids Audio API via a kickin' drum machine.
-* geolocation -- Access the device's geolocation data.
-* layerStack -- Native navigation, page transitions and backstack handling.
-* modal -- Using the modal window.
-* navigationBar -- Using the native navigation bar.
-* notification -- Access native notifications.
-* photoGallery -- Use Cordova's Camera and File APIs and Steroids native windowing to create a one-picture photo gallery.
-* preload -- Preload WebViews to have them available immediately.
-* s3upload -- Uploading photos to s3
-* storage -- Access Cordova's SQL Storage API.
-
-For a tutorial:
-
-```
-yo steroids:tutorial:<tutorialName>
-```
-
 Options:
 __tutorialName__: name of the tutorial to generate.
 
